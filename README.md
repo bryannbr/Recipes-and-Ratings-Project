@@ -43,6 +43,7 @@ Although the dataset had a plentiful amount of useful data, it required certain 
 
 <iframe src="assets/step2snip2.png" width="800" height="600" frameborder="0"></iframe>
 
+
 ## Univariate Analysis
 
 For this analysis, I examined the distribution of the proportion of protein in each recipe. The plot below shows the distrubution is right skewed. This shows that most recipes in the dataset have a relatively low proportion of protein compared to how many calories the respective recipe contains. As the protein ratio increases on the x axis, the number of recipes decrease, which show that protein rich recipes are not as common as the ones that are not as protein rich. The majority of recipes fall into the pit of recipes with less than 0.2 for protein ratio, while fewer recipes exceed the 0.2 mark and very few make it past 0.5. I will keep this observation in mind later during the analysis to explore whether recipes iwth higher protein content tend to recieve higher ratings on average.
