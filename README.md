@@ -62,7 +62,8 @@ placeholder plot
 
 Protein rich recipes can be received as more intricate or complex (more steps and ingredients). Even though they are more complex/intricate, ratings seem to go toe to toe with the non protein rich recipes despite the fact they seemingly are more complex and intricate
 
-placeholder plot
+<iframe src="assets/AggDF1Graph.html" width="800" height="600" frameborder="0"></iframe>
+
 
 ## Assessment of Missingness
 
@@ -79,7 +80,8 @@ I wanted to test whether the missingness in the rating column was dependent on t
 - Test statistic: the absolute difference in mean protein_ratio between rows where the rating is missing compared to the not missing rows
 - Significance Level: 0.05
 
-plot placeholder
+<iframe src="assets/step3missingness.html" width="800" height="600" frameborder="0"></iframe>
+
 
 First, the observed absolute difference statistic was calculated in the average protein_ratio between recipes with ratings missing and the ones that didn't have missing ratings. Then, I ran a permutation test by shuffling the missingness 1000 times and simuted test statistics to form a null distribution. 
 The observed test statistic was 0.003872, and noticeably distant from the center of null distribution. The p value was 0.001, (0.001 < 0.05). The p value is less than the significance value set earlier, which means we reject the null hypothesis here. The missingness of the rating column values does indeed depend on the protein content of the recipe. This could lead to a suggestion, for example, that users are more inclined to give a rating for the higher protein recipes (for example, if it contributes to their fitness goals or meals) as opposed to the lower protein recipes which may have been bypassed. 
@@ -97,7 +99,8 @@ I chose to use a permutation test because I do not have access to the population
 
 First, I grouped the dataset into 2 groups, protein rich and non protein rich recipes (where the is_protein_rich value column value for protein rich == True). Then I calculcated the mean rating for each group and calculated the difference in means. The observed statistic turned out to be -0.0183, which means the protein rich recipes were actually rated on average those amount of points lower than non protein rich recipes. Next, I shuffled the boolean protein rich labels 1000 times, each time calculating the difference in means to create a null distribution of the differences between the 2 groups. 
 
-placeholder plot
+<iframe src="assets/step4HypTest.html" width="800" height="600" frameborder="0"></iframe>
+
 
 ### Permutation Test Conclusions
 The p value in the end was essentially 0.0 (which is < the significance level 0.05), and with that, we reject the null hypothesis. This shows people do not rate all the recipes on quite the same scale, and that protein rich recipes tend to be rated lower than the non protein rich ones.
@@ -150,9 +153,11 @@ The precision parity of the Final Model was tested. This was because I was curio
 -The difference in precision (Quick Recipes - Long Recipes)
 -Significnace Level: 0.05
 
-plot placeholder
+<iframe src="assets/vis8.html" width="800" height="600" frameborder="0"></iframe>
+
 
 The observed test statistic  in precision was calculated to be 0.0025, meaning the model's precision was ever so slightly higher for quick recipes
 I ran a permutation test to assess the significance of this statistic by shuffling a "is_aquick_recipe" column 1000 times over and developing the null distribution with simulated test statistics. I ended up with a p value of 0.0 (<0.05), meaning we reject the null hypothesis and that the precision of the model is not fair across recipe minutes duration times due to the fact it performs slightly better for quick recipes than the long ones. This could be crucial in determining that the model may be biased against the long recipes compared to the quick ones. 
 
-### Example Table (Top 5 rows)
+---
+
