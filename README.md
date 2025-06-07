@@ -10,11 +10,12 @@ Group: Bryan Nguyen
 
 There are many things in life that bring people all around the world together. Whether it's music, culture, hobbies, you name it. One of those things is food. Food is one of the universal languages that people can connect through and come together for. In recent years, people have become more conscious of the food that they eat and what they put into their body, with awareness rising over topics such as fitness, health and wellness, healthy eating habits, etc. Keeping in check of these aspects can come in many ways. One way of building up these good habits are by keeping a log of how much protein one consumes, which is a great way to buold muscle. I myself have taken strides in this realm of keeping track of what I am putting in my body and the nutrients I consume after cooking my meals. Especially around my peers, recipes and meals are often highlighted by how much protein is in them, and are well received from my experience. This made me wonder if people would rate recipes higher depending on how much protein was in it. To tackle this thought, I am going to be analyzing two datasets containing recipes and their respective ratings post 2008 from food.com. The first dataset (recipes) contains tens of thousands of rows containing unique food recipes with the columns of recorded data about them below: 
 
-placeholder
+<iframe src="assets/introsnip1.png" width="800" height="600" frameborder="0"></iframe>
 
 The second dataset (interactions) contains hundreds of thousands of rows containing reviews from users on a unique recipe from the mentioned ones earlier. Its columns of recorded data are shown below: 
 
-placeholder
+<iframe src="assets/introsnip2.png" width="800" height="600" frameborder="0"></iframe>
+
 
 
 With this data, I am interested on exploring this essential question: Do people rate protein rich recipes on the same scale as non protein rich recipes? 
