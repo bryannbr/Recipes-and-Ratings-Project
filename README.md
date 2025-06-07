@@ -45,14 +45,14 @@ final merged df placeholder
 
 For this analysis, I examined the distribution of the proportion of protein in each recipe. The plot below shows the distrubution is right skewed. This shows that most recipes in the dataset have a relatively low proportion of protein compared to how many calories the respective recipe contains. As the protein ratio increases on the x axis, the number of recipes decrease, which show that protein rich recipes are not as common as the ones that are not as protein rich. The majority of recipes fall into the pit of recipes with less than 0.2 for protein ratio, while fewer recipes exceed the 0.2 mark and very few make it past 0.5. I will keep this observation in mind later during the analysis to explore whether recipes iwth higher protein content tend to recieve higher ratings on average.
 
-plot placeholder
+<iframe src="assets/uniplot1.html" width="800" height="600" frameborder="0"></iframe>
 
 ## Bivariate Analysis
 
 For this analysis, I examined the distribution of the the average ratings of recipes conditioned on whether the recipe is protein rich or not, based on what was classified as protein rich earlier. The graph below shows the proportion of recipes across the ratings possible for a recipe (1-5) for the 2 groups, protein rich and not protein rich. 
 The non protein rich recipes have a slightly higher proportion of 3 and 5 star ratings relative to the ones that are protein rich, which shows that the recipes with lower protein to calorie ratio tends to be more well received than the ones that have a higher ratio more times than not. However, the protein rich recipes show a higher proportion of 4 star ratings than the non protein rich ones. This suggests that the protein dense recipes are consistently well rated on average but are less likely to receive outstandingly low/high ratings. Meanwhile, the non protein rich recipes are more likely to receive 3 star and 5 star ratings, which indicates more variety in how they are received by users. This can show a distinction between users receiving the protein rich recipes more consistently while having more varying opinions on the ones that aren’t packed with as much protein. 
 
-plot placeholder
+<iframe src="assets/uniplot2.html" width="800" height="600" frameborder="0"></iframe>
 
 ## Interesting Aggregates
 
