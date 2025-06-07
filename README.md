@@ -36,11 +36,12 @@ Although the dataset had a plentiful amount of useful data, it required certain 
 -Another new column "is_protein_rich" was also added to the dataframe, which is a column of boolean values dictating if a recipe is considered rich in protein. This is derived from the protein_ratio column, where recipes with a value of greater than or equal to 0.2 would be considered rich in protein and score True for that value
 -The resulting dataframe had contained 234429 rows, and 27 columns. Certain columns were kept and others were discarded depending on if they were relevant to the exploration of the question. 
 
-plot placeholdr
+<iframe src="assets/step2snip1.png" width="800" height="600" frameborder="0"></iframe>
+
 
 -The final merged Dataframe contains 234429 rows of all user interactions with recipesm slimmed down to 13 columns of data that is actually valuable to the exploration. 
 
-final merged df placeholder
+<iframe src="assets/step2snip2.png" width="800" height="600" frameborder="0"></iframe>
 
 ## Univariate Analysis
 
