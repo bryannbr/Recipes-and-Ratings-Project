@@ -36,12 +36,12 @@ Although the dataset had a plentiful amount of useful data, it required certain 
 -Another new column "is_protein_rich" was also added to the dataframe, which is a column of boolean values dictating if a recipe is considered rich in protein. This is derived from the protein_ratio column, where recipes with a value of greater than or equal to 0.2 would be considered rich in protein and score True for that value
 -The resulting dataframe had contained 234429 rows, and 27 columns. Certain columns were kept and others were discarded depending on if they were relevant to the exploration of the question. 
 
-<iframe src="assets/step2snip1.png" width="800" height="600" frameborder="0"></iframe>
+<iframe src="assets/step2snip1.png" width="400" height="300" frameborder="0"></iframe>
 
 
 -The final merged Dataframe contains 234429 rows of all user interactions with recipesm slimmed down to 13 columns of data that is actually valuable to the exploration. 
 
-<iframe src="assets/step2snip2.png" width="800" height="600" frameborder="0"></iframe>
+<iframe src="assets/step2snip2.png" width="500" height="300" frameborder="0"></iframe>
 
 
 ## Univariate Analysis
@@ -49,6 +49,7 @@ Although the dataset had a plentiful amount of useful data, it required certain 
 For this analysis, I examined the distribution of the proportion of protein in each recipe. The plot below shows the distrubution is right skewed. This shows that most recipes in the dataset have a relatively low proportion of protein compared to how many calories the respective recipe contains. As the protein ratio increases on the x axis, the number of recipes decrease, which show that protein rich recipes are not as common as the ones that are not as protein rich. The majority of recipes fall into the pit of recipes with less than 0.2 for protein ratio, while fewer recipes exceed the 0.2 mark and very few make it past 0.5. I will keep this observation in mind later during the analysis to explore whether recipes iwth higher protein content tend to recieve higher ratings on average.
 
 <iframe src="assets/uniplot1.html" width="800" height="600" frameborder="0"></iframe>
+
 
 ## Bivariate Analysis
 
